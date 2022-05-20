@@ -1,12 +1,15 @@
 import React from "react";
-import './Main.css';
-import InitialScreen from "../InitialScreen/InitialScreen";
 import RepositoryArea from "../RepositoryArea/RepositoryArea";
 import ProfileArea from "../ProfileArea/ProfileArea";
+import './Main.css';
+import UserNotFound from "../UI/UserNotFound/UserNotFound";
 
 const Main = (props) => {
-    if (props.users.hasOwnProperty('id')) {
-        return (
+    return (
+        !props.users.hasOwnProperty('id')
+            ?
+            <UserNotFound usersIsEmpty={props.usersIsEmpty}/>
+            :
             <div className="main">
                 <div className="container">
                     <ProfileArea
@@ -14,14 +17,16 @@ const Main = (props) => {
                         followers={props.followers}
                         following={props.following}
                     />
-                    <RepositoryArea repos={props.repos} />
+                    <RepositoryArea
+                        repos={props.repos}
+                        repoIsEmpty={props.repoIsEmpty}
+                    />
                 </div>
             </div>
-        )
-    }
-    return (
-        <InitialScreen find={props.find}/>
+
     )
+
+
 }
 
 export default Main;

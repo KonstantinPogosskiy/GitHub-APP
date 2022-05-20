@@ -1,14 +1,14 @@
 import React from "react";
-import './Profile.css'
-import {roundNumber} from '../../utils/math'
+import {roundNumber} from '../../utils/math';
+import './Profile.css';
 
-function Profile(props) {
+const Profile = (props) => {
 
     return (
         <div className="profile">
-            <img className="avatar" alt="avatar" src={props.users.avatar_url} />
+            <img className="avatar" alt="avatar" src={props.users.avatar_url}/>
             <p className="username">{props.users.name}</p>
-            <a href={props.users.html_url} target="_blank" className="login">{props.users.login}</a>
+            <a href={props.users.html_url} target="_blank" rel="noreferrer" className="login">{props.users.login}</a>
             <div className="follow">
                 <div className="followers">
                     <img src={props.followers} alt="followers" width="22" height="14"/>

@@ -6,7 +6,9 @@ function Repository(props) {
         <div className="repository">
             <a
                 href={props.repos.html_url}
-                target="_blank">
+                target="_blank"
+                rel="noreferrer"
+            >
                 {props.repos.name}
             </a>
             <p>
