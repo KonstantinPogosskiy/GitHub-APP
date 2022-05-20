@@ -1,0 +1,21 @@
+.header {
+    height: 72px;
+    background: #0064EB;
+}
+
+.logo {
+    color: #0064EB;
+    width: 41px;
+    height: 41px;
+}
+
+.container {
+    display: flex;
+    margin: 16px 41px 16px 41px;
+    width: 95%;
+}
+
+._header {
+    height: 40px;
+    flex-direction: row;
+}

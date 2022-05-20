@@ -1,0 +1,23 @@
+.repositoryArea {
+    width: 80%;
+    padding: 20px;
+    color: black;
+}
+
+.pagination {
+    margin: 15px 32px auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    outline: none;
+}
+.pagination > .active > a {
+    background-color: #0064EB;
+    border-radius: 3px;
+    color: #fff;
+}
+.pagination > li > a {
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}

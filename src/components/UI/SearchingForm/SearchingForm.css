@@ -1,0 +1,23 @@
+.input {
+    width: 85%;
+    height: 100%;
+    border: none;
+    padding: 0 11px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    outline: none;
+
+}
+
+form {
+    width: 462px;
+    height: 40px;
+    padding: 0 19px;
+    margin: 0 22px;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border-radius: 6px;
+    align-items: center;
+}
