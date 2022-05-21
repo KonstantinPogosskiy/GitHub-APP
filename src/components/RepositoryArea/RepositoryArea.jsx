@@ -19,7 +19,7 @@ const RepositoryArea = (props) => {
     return (
         props.repos.length === 0
             ?
-            <ReposNotFound repoIsEmpty={props.repoIsEmpty}/>
+            <ReposNotFound reposIsEmpty={props.reposIsEmpty}/>
             :
             <div className="repositoryArea">
                 <h2>Repositories ({props.repos.length})</h2>

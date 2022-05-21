@@ -1,14 +1,19 @@
 import React from "react";
 import SearchingForm from "../UI/SearchingForm/SearchingForm";
-import './Header.css';
+import style from './Header.module.css';
 
 function Header(props) {
     return (
-        <div className="header">
-            <div className="container _header">
-                <img src={props.logo} alt="git" className="logo"/>
+        <div className={style.header}>
+            <div className={style.container}>
+                <img
+                    src={props.logo}
+                    alt="git"
+                    className={style.logo}
+                />
                 <SearchingForm
                     getUser={props.getUser}
+                    find={props.find}
                 />
             </div>
         </div>

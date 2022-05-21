@@ -1,23 +1,42 @@
 .repositoryArea {
-    width: 80%;
-    padding: 20px;
+    width: 100%;
+    margin: 20px 20px 20px 48px;
     color: black;
 }
 
+.repositoryArea h2 {
+    padding-bottom: 5px;
+}
+
 .pagination {
-    margin: 15px 32px auto;
+    font-size: 14px;
+    height: 25px;
+    margin: 0 22px auto;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
     list-style: none;
     outline: none;
+    gap: 10px;
 }
-.pagination > .active > a {
+.pagination > .active {
     background-color: #0064EB;
+    padding: 0;
     border-radius: 3px;
     color: #fff;
 }
+
+.pagination li {
+    height: 100%;
+    width: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+}
+
 .pagination > li > a {
-    padding: 5px 10px;
     outline: none;
     cursor: pointer;
 }

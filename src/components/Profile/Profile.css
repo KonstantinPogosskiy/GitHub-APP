@@ -1,7 +1,7 @@
 .profile {
     display: flex;
     flex-direction: column;
-    padding: 23px 20px 23px 20px;
+    margin: 23px 48px 23px 20px;
 }
 
 .avatar {

@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #808080;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 16px 36px;
+    width: 95%;
+}
+
+@media screen and (max-width: 815px) {
+    .container {
+        flex-direction: column;
+        font-size: 18px;
+    }
+}

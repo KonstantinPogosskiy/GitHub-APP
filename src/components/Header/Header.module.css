@@ -11,11 +11,6 @@
 
 .container {
     display: flex;
-    margin: 16px 41px 16px 41px;
+    margin: 16px 41px;
     width: 95%;
-}
-
-._header {
-    height: 40px;
-    flex-direction: row;
 }

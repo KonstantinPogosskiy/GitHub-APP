@@ -3,9 +3,9 @@ import style from './ReposNotFound.css';
 
 const ReposNotFound = (props) => {
     return (
-        <div className = {style.wrapper}>
-            <div className = {style.content}>
-                <img src={props.repoIsEmpty} alt="empty"/>
+        <div className = "wrapper">
+            <div className = "content">
+                <img src={props.reposIsEmpty} alt="empty"/>
                 <p>Repository list is empty</p>
             </div>
         </div>

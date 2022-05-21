@@ -3,7 +3,6 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import {URL} from "./constants/constants";
 import './App.css';
-import InitialScreen from "./components/UI/InitialScreen/InitialScreen";
 
 const App = () => {
 
@@ -27,22 +26,19 @@ const App = () => {
         <div className="App">
             <Header
                 logo={'/images/Frame.svg'}
+                find={'/images/glass.svg'}
                 getUser={requestUsers}
             />
-            {data.user.length === 0
-                ?
-                <InitialScreen find={'/images/handglass.svg'}/>
-                :
-                <Main
-                    repoIsEmpty={'/images/repos_empty.svg'}
-                    usersIsEmpty={'/images/users_empty.svg'}
-                    isFetching={isFetching}
-                    users={data.user}
-                    repos={data.repo}
-                    followers={'/images/followers.svg'}
-                    following={'/images/following.svg'}
-                />
-            }
+            <Main
+                reposIsEmpty={'/images/repos_empty.svg'}
+                usersIsEmpty={'/images/users_empty.svg'}
+                find={'/images/glass.svg'}
+                isFetching={isFetching}
+                users={data.user}
+                repos={data.repo}
+                followers={'/images/followers.svg'}
+                following={'/images/following.svg'}
+            />
         </div>
     );
 }

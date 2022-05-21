@@ -1,13 +1,13 @@
 import React from "react";
-import "./InitialScreen.css";
+import style from "./InitialScreen.module.css";
 
 function InitialScreen (props) {
     return (
-    <div className="main">
-        <div className="container _main">
-            <div className="initialScreen">
-                <img src={props.find} alt="Handglass" className="handglass"/>
-                <div className="text">
+    <div className={style.main}>
+        <div className={style.container}>
+            <div className={style.initialScreen}>
+                <img src={props.find} alt="find" className={style.find}/>
+                <div className={style.text}>
                     <p>Start with searching a GitHub user</p>
                 </div>
             </div>

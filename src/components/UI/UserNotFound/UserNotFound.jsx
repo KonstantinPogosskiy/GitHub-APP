@@ -3,8 +3,8 @@ import style from './UserNotFound.css';
 
 const UserNotFound = (props) => {
     return (
-        <div className={style.wrapper}>
-            <div className = {style.content}>
+        <div className ="wrapper">
+            <div className = "content">
                 <img src={props.usersIsEmpty} alt="empty"/>
                 <p>User not found</p>
             </div>

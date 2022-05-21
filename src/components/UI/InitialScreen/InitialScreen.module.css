@@ -1,0 +1,38 @@
+.initialScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    width: 210px;
+    height: 172px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #808080;
+    height: 100%;
+}
+
+.text {
+    width: 210px;
+    margin: 46px auto;
+    text-align: center;
+    line-height: 31px;
+}
+
+.find {
+    width: 64px;
+    height: 64px;
+}
+
+.container {
+    display: flex;
+    margin: 16px 41px;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

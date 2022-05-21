@@ -20,8 +20,8 @@ const SearchingForm = (props) => {
     return (
         <form onSubmit={handleSubmit}>
             <img
-                src='/images/Handglass.svg'
-                alt='handglass'
+                src={props.find}
+                alt='glass'
                 width="14"
                 height="14"/>
             <input
