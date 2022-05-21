@@ -3,12 +3,16 @@ import RepositoryArea from "../RepositoryArea/RepositoryArea";
 import ProfileArea from "../ProfileArea/ProfileArea";
 import './Main.css';
 import UserNotFound from "../UI/UserNotFound/UserNotFound";
+import Preloader from "../UI/Preloader/Preloader";
 
 const Main = (props) => {
+    if(props.users.hasOwnProperty('id')) {
+        return <UserNotFound usersIsEmpty={props.usersIsEmpty}/>
+    }
     return (
-        !props.users.hasOwnProperty('id')
+        (!props.isFetching === true)
             ?
-            <UserNotFound usersIsEmpty={props.usersIsEmpty}/>
+            <Preloader/>
             :
             <div className="main">
                 <div className="container">
