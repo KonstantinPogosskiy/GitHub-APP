@@ -14,3 +14,21 @@
     margin: 16px 41px;
     width: 95%;
 }
+
+@media screen and (max-width: 815px) {
+    .header {
+        height: 90px;
+    }
+    .container {
+        margin: 16px 20px;
+    }
+    .logo {
+        margin: auto 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 16px 12px;
+    }
+}

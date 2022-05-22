@@ -1,3 +1,10 @@
 .profileArea {
     width: 392px;
 }
+
+@media screen and (max-width: 815px) {
+    .profileArea {
+        width: 100%;
+        margin: 0;
+    }
+}

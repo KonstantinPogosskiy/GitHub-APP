@@ -12,7 +12,9 @@ function Repository(props) {
                 {props.repos.name}
             </a>
             <p>
-                {props.repos.description}
+                {props.repos.description ?
+                    props.repos.description :
+                    "This repository has no description"}
             </p>
         </div>
     )

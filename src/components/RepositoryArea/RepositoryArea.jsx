@@ -30,8 +30,8 @@ const RepositoryArea = (props) => {
                     breakLabel={'...'}
                     breakClassName={'break'}
                     pageCount={pageCount}
-                    marginPagesDisplayed={2}
-                    pageRangeDisplayed={5}
+                    marginPagesDisplayed={1}
+                    pageRangeDisplayed={3}
                     onPageChange={handlePageClick}
                     containerClassName={'pagination'}
                     subContainerClassName={'pages pagination'}

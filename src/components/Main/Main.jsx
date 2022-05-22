@@ -14,13 +14,7 @@ const Main = (props) => {
         return <InitialScreen find={props.find}/>
     }
     if (!props.users.hasOwnProperty('id')) {
-        return (
-            <div className={style.main}>
-                <div className={style.container}>
-                    <UserNotFound usersIsEmpty={props.usersIsEmpty}/>
-                </div>
-            </div>
-        )
+        return <UserNotFound usersIsEmpty={props.usersIsEmpty}/>
     }
     return (
         <div className={style.main}>

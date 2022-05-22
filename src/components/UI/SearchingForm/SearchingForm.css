@@ -7,7 +7,6 @@
     line-height: 17px;
     font-weight: 400;
     outline: none;
-
 }
 
 form {
@@ -20,4 +19,18 @@ form {
     background: #FFFFFF;
     border-radius: 6px;
     align-items: center;
+}
+
+@media screen and (max-width: 815px) {
+    form {
+        height: 52px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        padding: 0 12px;
+        margin: 0 12px;
+
+    }
 }
