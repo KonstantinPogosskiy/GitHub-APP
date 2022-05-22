@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/GitHub-APP/static/css/main.7f64d03c.css",
-    "main.js": "/GitHub-APP/static/js/main.a3e88f78.js",
+    "main.js": "/GitHub-APP/static/js/main.f3eec5bc.js",
+    "static/media/frame.svg": "/GitHub-APP/static/media/frame.c7a5fa933b1f99b6e175069619e3fd73.svg",
+    "static/media/followers.svg": "/GitHub-APP/static/media/followers.c28170a35d4225dbd35fd5fcfe8d1599.svg",
+    "static/media/repos_empty.svg": "/GitHub-APP/static/media/repos_empty.ae2522580bf55fa6ea58b4d7ae8a6e60.svg",
     "index.html": "/GitHub-APP/index.html",
+    "static/media/glass.svg": "/GitHub-APP/static/media/glass.1566e5e768319804cdef6974eeab964b.svg",
+    "static/media/users_empty.svg": "/GitHub-APP/static/media/users_empty.8fe7b3bb405afa93a396091fe2205290.svg",
+    "static/media/following.svg": "/GitHub-APP/static/media/following.829b01f2b1b8cf8e390548bbac574f6e.svg",
     "main.7f64d03c.css.map": "/GitHub-APP/static/css/main.7f64d03c.css.map",
-    "main.a3e88f78.js.map": "/GitHub-APP/static/js/main.a3e88f78.js.map"
+    "main.f3eec5bc.js.map": "/GitHub-APP/static/js/main.f3eec5bc.js.map"
   },
   "entrypoints": [
     "static/css/main.7f64d03c.css",
-    "static/js/main.a3e88f78.js"
+    "static/js/main.f3eec5bc.js"
   ]
 }
