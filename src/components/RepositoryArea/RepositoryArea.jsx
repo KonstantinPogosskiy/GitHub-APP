@@ -1,9 +1,9 @@
 import Repository from "../Repository/Repository";
 import React, {useState} from "react";
 import {PER_PAGE, PREV_ARROW, NEXT_ARROW} from "../../constants/constants";
-import './RepositoryArea.css';
 import ReactPaginate from "react-paginate";
 import ReposNotFound from "../UI/ReposNotFound/ReposNotFound";
+import './RepositoryArea.css';
 
 const RepositoryArea = (props) => {
 
