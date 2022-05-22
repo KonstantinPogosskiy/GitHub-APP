@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    background: #F9F9F9;
+}
+
 .App {
     height: 100vh;
     display: flex;

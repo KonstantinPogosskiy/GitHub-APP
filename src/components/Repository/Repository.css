@@ -25,6 +25,8 @@
     line-height: 19px;
     color: #000000;
     margin: 16px auto 24px 32px;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .repository a:hover {
