@@ -25,6 +25,7 @@ const Main = (props) => {
                     following={props.following}
                 />
                 <RepositoryArea
+                    offset={props.offset}
                     repos={props.repos}
                     reposIsEmpty={props.reposIsEmpty}
                 />

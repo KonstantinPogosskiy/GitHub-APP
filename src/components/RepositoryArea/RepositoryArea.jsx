@@ -24,19 +24,22 @@ const RepositoryArea = (props) => {
             <div className="repositoryArea">
                 <h2>Repositories ({props.repos.length})</h2>
                 {props.repos.slice(offset, offset + PER_PAGE).map((item) => <Repository repos={item}/>)}
-                <ReactPaginate
-                    previousLabel={PREV_ARROW}
-                    nextLabel={NEXT_ARROW}
-                    breakLabel={'...'}
-                    breakClassName={'break'}
-                    pageCount={pageCount}
-                    marginPagesDisplayed={1}
-                    pageRangeDisplayed={3}
-                    onPageChange={handlePageClick}
-                    containerClassName={'pagination'}
-                    subContainerClassName={'pages pagination'}
-                    activeClassName={'active'}
-                />
+                {pageCount > 1 && (
+                    <ReactPaginate
+                        previousLabel={PREV_ARROW}
+                        nextLabel={NEXT_ARROW}
+                        breakLabel={'...'}
+                        breakClassName={'break'}
+                        pageCount={pageCount}
+                        marginPagesDisplayed={1}
+                        pageRangeDisplayed={3}
+                        onPageChange={handlePageClick}
+                        containerClassName={'pagination'}
+                        subContainerClassName={'pages pagination'}
+                        activeClassName={'active'}
+                    />
+                )
+                }
             </div>
     )
 }
